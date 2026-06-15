@@ -39,4 +39,11 @@ public interface MinecraftClient_BetterCombat {
     }
 
     void cancelUpswing();
+
+    /**
+     * True while the attack input is being held (hold-to-attack), i.e. another swing is expected
+     * to follow the current one. Used to keep first-person rendering on the attack animation
+     * across the recovery window between rapid swings.
+     */
+    boolean isHoldingAttack();
 }

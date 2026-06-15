@@ -504,4 +504,9 @@ public abstract class MinecraftClientInject implements MinecraftClient_BetterCom
         }
         return null;
     }
+
+    @Override
+    public boolean isHoldingAttack() {
+        return isHoldingAttackInput;
+    }
 }
